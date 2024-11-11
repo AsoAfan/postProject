@@ -16,6 +16,7 @@
                                                  class="border-b border-black pb-0.5 hover:border-transparent">Register
                     now</a></p>
 
+
         </form>
 
     </div>

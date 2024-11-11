@@ -23,6 +23,8 @@ class PostController extends Controller
             $image_name = request()->file('post_image')->getClientOriginalName();
             $image_path = request()->file('post_image')->storeAs('storage', auth()->id() . '.' . $image_name, 'public');
         }
+
+//        dd($image_name, $image_path);
         $post = Post::create([
             'user_id' => auth()->id(),
             'body' => request()->get('body'),

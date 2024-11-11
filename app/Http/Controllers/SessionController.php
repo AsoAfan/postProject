@@ -29,7 +29,7 @@ class SessionController extends Controller
     public function destroy()
     {
         auth()->logout();
-
+        session_regenerate_id();
         return redirect('/login')->with('success', "Logout succeed");
     }
 }
